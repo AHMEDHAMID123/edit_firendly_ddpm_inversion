@@ -1,4 +1,4 @@
-# Denoising Diffusion Implicit Models
+# An Edit Friendly DDPM Noise Space: Inversion
 
 This repository contains an implementation of *An Edit Friendly DDPM Noise Space: Inversion and Manipulations* for image generation and manipulation. It edits the paper implementation to be compatible with flow matching models. It uses the Stable Diffusion 3/3.5 models, which are rectified flow formulations that assume the flow between the data and the noise follows a straight-line trajectory. This line is actually the solution for the optimal transport map between the noise and data distributions and provides tools for encoding, decoding, and generating images using diffusion-based techniques.
 
