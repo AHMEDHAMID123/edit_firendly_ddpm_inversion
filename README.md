@@ -1,7 +1,16 @@
 # Denoising Diffusion Implicit Models
 
-This repository contains an implementation of An Edit Friendly DDPM Noise Space: Inversion and Manipulations for image generation and manipulation. It edits the paper implementation to be compitable with flow matching models. It uses the Stable Diffusion3/3.5 models which are a rectified flow formulations which assumes that flow between the data and the noise follows a straight line trajectory, this line is actully the solution for the optimal transport map between the noise and data distributions, and provides tools for encoding, decoding, and generating images using diffusion-based techniques.
+This repository contains an implementation of *An Edit Friendly DDPM Noise Space: Inversion and Manipulations* for image generation and manipulation. It edits the paper implementation to be compatible with flow matching models. It uses the Stable Diffusion 3/3.5 models, which are rectified flow formulations that assume the flow between the data and the noise follows a straight-line trajectory. This line is actually the solution for the optimal transport map between the noise and data distributions and provides tools for encoding, decoding, and generating images using diffusion-based techniques.
 
+### Example Results
+
+Below are examples of the original image and the image generated using the DDPM inversion process:
+
+**Original Image**:
+![Original Image](original_image.png)
+
+**DDPM Inversion Result**:
+![DDPM Inversion Result](ddpm_inversion_result.png)
 
 ### Usage
 
@@ -40,8 +49,8 @@ This repository contains an implementation of An Edit Friendly DDPM Noise Space:
    from PIL import Image
 
    input_image = Image.open("path/to/image.png")
-   latents = ddpm.latent_encoder(input_image)
-   decoded_image = ddpm.latent_decoder(latents, img=True)
+   latents = ddpm.encode_image(**kwargs)
+   decoded_image = ddpm.decode_image(**kwargs)
    decoded_image.show()
    ```
 
@@ -55,4 +64,4 @@ This repository contains an implementation of An Edit Friendly DDPM Noise Space:
 
 - [Stable Diffusion](https://github.com/CompVis/stable-diffusion)
 - [Hugging Face Diffusers](https://github.com/huggingface/diffusers)
-- [An Edit Friendly DDPM Noise Space: Inversion and Manipulations] (https://arxiv.org/abs/2304.06140)
+- [An Edit Friendly DDPM Noise Space: Inversion and Manipulations](https://arxiv.org/abs/2304.06140)
