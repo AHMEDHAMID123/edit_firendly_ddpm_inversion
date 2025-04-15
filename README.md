@@ -7,10 +7,10 @@ This repository contains an implementation of *An Edit Friendly DDPM Noise Space
 Below are examples of the original image and the image generated using the DDPM inversion process:
 
 **Original Image**:
-![Original Image](original_image.png)
+![Original Image](/org_image.png)
 
 **DDPM Inversion Result**:
-![DDPM Inversion Result](ddpm_inversion_result.png)
+![DDPM Inversion Result](/ddpm_inversion.png)
 
 ### Usage
 
