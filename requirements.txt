@@ -1,0 +1,8 @@
+torch>=1.9.0
+torchvision>=0.10.0
+diffusers>=0.14.0
+pydantic>=1.10.0
+matplotlib>=3.4.0
+pillow>=8.0.0
+pyyaml>=5.4.0
+black>=23.9.1

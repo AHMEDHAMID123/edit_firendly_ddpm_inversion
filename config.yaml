@@ -1,0 +1,10 @@
+base_dir: /home/a.zeid/experiments/denoising_diffusion_implicit_models
+sd_model : stabilityai/stable-diffusion-3-medium-diffusers
+guidance_scale : 2.0
+num_inference_steps : 50
+image_path : /home/a.zeid/experiments/denoising_diffusion_implicit_models/org_image.png
+seed : 42
+font_size: 100
+dtype : half
+prompt : a cat holding a sign with hello world written on it
+edit_prompt : a cat holding a sign with hello people written on it
